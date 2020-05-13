@@ -103,7 +103,6 @@
           resolve(optionChainData);
         } else {
           fetch('/chain')
-
             .then(resp => {
               if (resp.status != 200) throw new Error('something went wrong');
               return resp.json();
